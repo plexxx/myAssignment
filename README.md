@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/plexxx/myAssignment.svg?branch=master)](https://travis-ci.org/plexxx/myAssignment)
+Travis CI Build Status: [![Build Status](https://travis-ci.org/plexxx/myAssignment.svg?branch=master)](https://travis-ci.org/plexxx/myAssignment)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 myAssignment
