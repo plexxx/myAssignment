@@ -1,5 +1,3 @@
-library(testthat)
-
 #' Super minimal test suite
 #'
 #' Tests that the function \code{make_filename} returns the expected string for
