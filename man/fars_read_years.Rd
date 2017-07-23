@@ -26,5 +26,7 @@ functions may throw errors, for example, if files with names for the
 requested FARS datasets do not exists in the current working directory.
 }
 \examples{
+\dontrun{
 fars_data <- fars_read_years(c(2013, 2014))
+}
 }

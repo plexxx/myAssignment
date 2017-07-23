@@ -21,5 +21,7 @@ The function will try to cast the parameter into an integer. Errors
 may result from casting a variable that cannot be cast into an integer.
 }
 \examples{
+\dontrun{
 f <- make_filename(2013)
+}
 }

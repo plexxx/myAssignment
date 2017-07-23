@@ -22,5 +22,7 @@ All messages during reading are being suppressed.
 The function will throw an error if a file with the given file name does not exist
 }
 \examples{
+\dontrun{
 dat <- fars_read("accident_2013.csv.bz2")
+}
 }

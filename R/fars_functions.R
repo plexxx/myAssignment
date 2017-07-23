@@ -7,7 +7,10 @@
 #' @details All messages during reading are being suppressed.
 #'
 #' The function will throw an error if a file with the given file name does not exist
-#' @examples dat <- fars_read("accident_2013.csv.bz2")
+#' @examples
+#' \dontrun{
+#' dat <- fars_read("accident_2013.csv.bz2")
+#' }
 fars_read <- function(filename) {
         if(!file.exists(filename))
                 stop("file '", filename, "' does not exist")
@@ -25,7 +28,10 @@ fars_read <- function(filename) {
 #' @return the file name of the FARS data set for the given year
 #' @details The function will try to cast the parameter into an integer. Errors
 #' may result from casting a variable that cannot be cast into an integer.
-#' @examples f <- make_filename(2013)
+#' @examples
+#' \dontrun{
+#' f <- make_filename(2013)
+#' }
 make_filename <- function(year) {
         year <- as.integer(year)
         sprintf("accident_%d.csv.bz2", year)
@@ -41,7 +47,10 @@ make_filename <- function(year) {
 #' @param years a vector of integers, one for each year for which you want to
 #' load the FARS data
 #' @return a list of tibbles, one for each year given
-#' @examples fars_data <- fars_read_years(c(2013, 2014))
+#' @examples
+#' \dontrun{
+#' fars_data <- fars_read_years(c(2013, 2014))
+#' }
 #' @details This function uses \code{fars_read} and \code{make_filename}. These
 #' functions may throw errors, for example, if files with names for the
 #' requested FARS datasets do not exists in the current working directory.
@@ -73,7 +82,10 @@ fars_read_years <- function(years) {
 #' @param  years a vector of year numbers.
 #' @return a tibble with 12 rows and a number of columns equal to the number of
 #' years given.
-#' @examples y <- fars_summarize_years(c(2013, 2014))
+#' @examples
+#' \dontrun{
+#' y <- fars_summarize_years(c(2013, 2014))
+#' }
 #' @inherit fars_read_years details
 #' @importFrom dplyr bind_rows
 #' @importFrom dplyr group_by
@@ -111,7 +123,10 @@ fars_summarize_years <- function(years) {
 #' 90. These values may be outside the bounds of the state map and therefore
 #' cause plotting to throw errors.
 #' @inherit fars_read_years details
-#' @examples fars_map_state(1, 2013)
+#' @examples
+#' \dontrun{
+#' fars_map_state(1, 2013)
+#' }
 #' @importFrom dplyr filter
 #' @importFrom maps map
 #' @importFrom graphics points

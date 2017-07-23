@@ -34,5 +34,7 @@ function implicitly sets missing longitudes to 900 and missing latitudes to
 cause plotting to throw errors.
 }
 \examples{
+\dontrun{
 fars_map_state(1, 2013)
+}
 }
