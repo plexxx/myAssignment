@@ -11,7 +11,7 @@ vignette: >
 
 The package `myAssignment` contains a collection of functions that can be used to explore and visualize data sets from the Fatality Analysis Reporting System (FARS) provided by the United States Department of Transportation.
 
-It includes x functions, in short
+It includes 5 functions, in short
 
 - `fars_read` to load a data set from hard disk
 - `make_filename` to create the file name for a data set from a year number

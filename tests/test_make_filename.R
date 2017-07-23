@@ -5,7 +5,8 @@
 #' @importFrom testthat test_that
 #' @importFrom testthat expect_that
 #' @importFrom testthat equals
-test_that("myTest", {
-  filename <- make_filename(2014)
-  expect_that(filename, equals("accident_2014.csv.bz2"))
+#' @importFrom myAssignment make_filename
+testthat::test_that("myTest", {
+  filename <- myAssignment::make_filename(2014)
+  testthat::expect_that(filename, testthat::equals("accident_2014.csv.bz2"))
 })
